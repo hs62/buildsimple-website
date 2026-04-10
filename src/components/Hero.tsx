@@ -17,8 +17,8 @@ export default function Hero() {
 
         <ScrollReveal variant="up" delay={1}>
           <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold tracking-tight text-primary leading-[1.1]">
-            Stop chasing subs.{" "}
-            <span className="text-accent">Start winning more bids.</span>
+            Stop chasing quotes.{" "}
+            <span className="text-accent">Start closing bids.</span>
           </h1>
         </ScrollReveal>
 
