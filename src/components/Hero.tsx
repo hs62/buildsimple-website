@@ -10,12 +10,6 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center w-full">
         <ScrollReveal variant="up">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-accent/15 text-accent-dark text-xs font-semibold tracking-wide uppercase border border-accent/30 mb-6">
-            For General Contractors
-          </span>
-        </ScrollReveal>
-
-        <ScrollReveal variant="up" delay={1}>
           <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold tracking-tight text-primary leading-[1.1]">
             Stop chasing quotes.{" "}
             <span className="text-accent">Start closing bids.</span>
