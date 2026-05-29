@@ -26,16 +26,27 @@ export default function Hero() {
         <ScrollReveal variant="scale" delay={3}>
           <div className="mt-10 max-w-3xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden bg-primary shadow-2xl border-2 border-primary-light">
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white/60">
-                <svg
-                  className="w-16 h-16 mb-3"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <p className="text-sm">Video coming soon</p>
-              </div>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                poster="/video-poster.jpg"
+              >
+                <source src="/demo.mp4" type="video/mp4" />
+                {/* Fallback if video fails to load */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white/60">
+                  <svg
+                    className="w-16 h-16 mb-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  <p className="text-sm">Video coming soon</p>
+                </div>
+              </video>
             </div>
           </div>
         </ScrollReveal>
