@@ -14,23 +14,24 @@ export default function WaitlistForm() {
     setStatus("loading");
 
     try {
-      const res = await fetch("/api/waitlist", {
+      const webhookUrl = process.env.NEXT_PUBLIC_MAKE_WEBHOOK_URL;
+      if (!webhookUrl) throw new Error("Webhook not configured");
+
+      const res = await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, name, company }),
       });
 
-      const data = await res.json();
-
       if (res.ok) {
         setStatus("success");
-        setMessage(data.message);
+        setMessage("We'll be in touch when BuildSimple is ready.");
         setEmail("");
         setName("");
         setCompany("");
       } else {
         setStatus("error");
-        setMessage(data.error || "Something went wrong. Please try again.");
+        setMessage("Something went wrong. Please try again.");
       }
     } catch {
       setStatus("error");
