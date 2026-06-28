@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="relative aspect-video rounded-2xl overflow-hidden bg-primary shadow-2xl border-2 border-primary-light">
               <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/WNI6JoDZ8KA?si=QDWVRXVvW9pcRYBH" 
-                title="YouTube video player" 
+                title="BuildSimple demo" 
                 frameborder="0" 
                 allow="accelerometer; 
                 autoplay; clipboard-write; encrypted-media; 
