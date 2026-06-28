@@ -26,14 +26,12 @@ export default function Hero() {
         <ScrollReveal variant="scale" delay={3}>
           <div className="mt-10 max-w-3xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden bg-primary shadow-2xl border-2 border-primary-light">
-              <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/WNI6JoDZ8KA?si=QDWVRXVvW9pcRYBH" 
-                title="BuildSimple demo" 
-                allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" 
-                >
-              </iframe>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/WNI6JoDZ8KA?si=QDWVRXVvW9pcRYBH"
+                title="BuildSimple demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              />
             </div>
           </div>
         </ScrollReveal>
