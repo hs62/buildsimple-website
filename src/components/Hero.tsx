@@ -29,7 +29,7 @@ export default function Hero() {
               <iframe
                 src="https://www.youtube.com/embed/WNI6JoDZ8KA?autoplay=1&mute=1&loop=1&playlist=WNI6JoDZ8KA&controls=0&modestbranding=1&rel=0"
                 className="absolute inset-0 w-full h-full"
-                allow="autoplay; encrypted-media"
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
                 title="BuildSimple demo"
               />
