@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -42,6 +43,18 @@ export default function TermsPage() {
       <Navbar />
       <main className="bg-[#FFFDF7] min-h-screen">
         <div className="max-w-3xl mx-auto px-6 pt-32 pb-24">
+          {/* Breadcrumb back to main site */}
+          <nav aria-label="Breadcrumb" className="mb-8 text-sm font-medium">
+            <Link
+              href="/"
+              className="text-accent-dark hover:text-primary transition-colors"
+            >
+              &larr; BuildSimple.ai
+            </Link>
+            <span className="mx-2 text-primary/30">/</span>
+            <span className="text-primary/50">Terms &amp; Conditions</span>
+          </nav>
+
           {/* ---------------- Terms & Conditions ---------------- */}
           <h1 className="text-3xl sm:text-4xl font-bold text-primary leading-tight">
             Terms &amp; Conditions
