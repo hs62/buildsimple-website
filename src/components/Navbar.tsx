@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import ScrollProgress from "./ScrollProgress";
 
@@ -25,7 +26,7 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <a href="#" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/buildsimple-website/logo.svg"
               alt="BuildSimple.ai"
@@ -33,32 +34,32 @@ export default function Navbar() {
               height={38}
               priority
             />
-          </a>
+          </Link>
 
           <div className="hidden sm:flex items-center gap-8 text-sm font-medium text-primary/70">
-            <a href="#" className="hover:text-primary transition-colors">
+            <Link href="/" className="hover:text-primary transition-colors">
               Home
-            </a>
-            <a
-              href="#features"
+            </Link>
+            <Link
+              href="/#features"
               className="hover:text-primary transition-colors"
             >
               Features
-            </a>
-            <a
-              href="#products"
+            </Link>
+            <Link
+              href="/#products"
               className="hover:text-primary transition-colors"
             >
               Products
-            </a>
+            </Link>
           </div>
 
-          <a
-            href="#waitlist"
+          <Link
+            href="/#waitlist"
             className="bg-accent text-white px-5 py-2.5 rounded-lg hover:bg-accent-dark transition-colors font-semibold text-sm shadow-md shadow-accent/20"
           >
             Join Waitlist
-          </a>
+          </Link>
         </div>
       </nav>
     </>
