@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
@@ -96,6 +97,24 @@ export default function WaitlistForm() {
       >
         {status === "loading" ? "Joining..." : "Join Waitlist"}
       </button>
+
+      <p className="text-white/40 text-xs text-center leading-relaxed">
+        By joining, you agree to our{" "}
+        <Link
+          href="/terms"
+          className="underline hover:text-white/70 transition-colors"
+        >
+          Terms &amp; Conditions
+        </Link>{" "}
+        and{" "}
+        <Link
+          href="/terms#privacy"
+          className="underline hover:text-white/70 transition-colors"
+        >
+          Privacy Policy
+        </Link>
+        .
+      </p>
     </form>
   );
 }
