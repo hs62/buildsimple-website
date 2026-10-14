@@ -28,7 +28,7 @@ export default function DemoCTA() {
           </span>
         </ScrollReveal>
         <ScrollReveal variant="up" delay={1}>
-          <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight text-balance">
             Be the first to{" "}
             <span className="text-accent">get access.</span>
           </h2>

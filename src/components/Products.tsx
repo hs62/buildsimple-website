@@ -62,9 +62,9 @@ export default function Products() {
             </span>
           </ScrollReveal>
           <ScrollReveal variant="up" delay={1}>
-            <h2 className="text-3xl sm:text-5xl font-bold text-primary leading-tight">
-              Built for builders.{" "}
-              <span className="text-accent">Made simple.</span>
+            <h2 className="text-3xl sm:text-5xl font-bold text-primary leading-tight text-balance">
+              AI for the{" "}
+              <span className="text-accent">construction industry.</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal variant="up" delay={2}>

@@ -16,36 +16,31 @@ export default function Metrics() {
             </span>
           </ScrollReveal>
           <ScrollReveal variant="up" delay={1}>
-            <h2 className="text-3xl sm:text-4xl font-bold text-primary leading-tight">
-              Real time saved.{" "}
-              <span className="text-accent">Real bids won.</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary leading-tight text-balance">
+              Bid more.{" "}
+              <span className="text-accent">Build more.</span>
             </h2>
           </ScrollReveal>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <ScrollReveal variant="left" delay={1}>
-            <div className="text-center p-10 rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/10 to-accent/0 hover:border-accent hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500">
-              <p className="text-6xl sm:text-7xl md:text-[5.5rem] font-bold text-primary leading-none">
-                <AnimatedCounter value="6–7" />
-              </p>
-              <p className="mt-4 text-primary/60 text-sm sm:text-base font-medium">
-                hours saved per bid
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal variant="right" delay={2}>
-            <div className="text-center p-10 rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/10 to-accent/0 hover:border-accent hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500">
-              <p className="text-6xl sm:text-7xl md:text-[5.5rem] font-bold text-primary leading-none">
-                <AnimatedCounter value={50} suffix="%" />
-              </p>
-              <p className="mt-4 text-primary/60 text-sm sm:text-base font-medium">
-                more projects bid
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
+        <ScrollReveal variant="scale" delay={1} className="max-w-2xl mx-auto">
+          <div className="text-center px-6 py-10 sm:p-12 rounded-3xl border-2 border-accent/30 bg-gradient-to-br from-accent/10 to-accent/0 hover:border-accent hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500">
+            <p className="flex flex-wrap items-baseline justify-center gap-x-3 font-bold text-primary leading-none">
+              <span className="text-3xl sm:text-4xl md:text-5xl">Up to</span>
+              <AnimatedCounter
+                value={33}
+                suffix="%"
+                className="text-7xl sm:text-8xl md:text-[7.5rem]"
+              />
+            </p>
+            <p className="mt-5 text-primary/60 text-base sm:text-lg font-medium text-balance">
+              more projects bid with the same team
+            </p>
+          </div>
+          <p className="mt-4 text-center text-xs sm:text-sm text-primary/40 text-balance">
+            Estimate based on time saved on sub coordination per bid.
+          </p>
+        </ScrollReveal>
       </div>
 
       {/* Bridge into Products (subtle gray) */}

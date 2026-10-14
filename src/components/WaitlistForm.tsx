@@ -95,7 +95,7 @@ export default function WaitlistForm() {
         disabled={status === "loading"}
         className="w-full px-6 py-3.5 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors cursor-pointer disabled:opacity-60 shadow-lg shadow-black/20"
       >
-        {status === "loading" ? "Joining..." : "Join Waitlist"}
+        {status === "loading" ? "Joining..." : "Join the waitlist"}
       </button>
 
       <p className="text-white/40 text-xs text-center leading-relaxed">

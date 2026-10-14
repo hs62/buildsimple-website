@@ -3,12 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 type Props = {
-  /** Either a number to count up to, or a custom string label (e.g. "6–7"). */
-  value: number | string;
+  value: number;
   suffix?: string;
   duration?: number;
   className?: string;
 };
+
+const THRESHOLD = 0.4;
 
 export default function AnimatedCounter({
   value,
@@ -17,52 +18,51 @@ export default function AnimatedCounter({
   className = "",
 }: Props) {
   const ref = useRef<HTMLSpanElement | null>(null);
-  const [display, setDisplay] = useState<string>(
-    typeof value === "number" ? "0" : value
-  );
-  const startedRef = useRef(false);
+  // Starts at the final value so the server-rendered HTML (crawlers, no-JS visitors) shows it.
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     const node = ref.current;
-    if (!node) return;
+    if (!node || typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    // For non-numeric values (e.g., "6–7"), we just fade them in via parent.
-    if (typeof value !== "number") {
-      setDisplay(value);
-      return;
-    }
-
-    if (typeof IntersectionObserver === "undefined") {
-      setDisplay(String(value));
-      return;
-    }
+    let armed = false;
+    let frame = 0;
 
     const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !startedRef.current) {
-            startedRef.current = true;
-            const start = performance.now();
-            const target = value as number;
-            const tick = (now: number) => {
-              const elapsed = now - start;
-              const progress = Math.min(elapsed / duration, 1);
-              // easeOutCubic
-              const eased = 1 - Math.pow(1 - progress, 3);
-              const current = Math.round(target * eased);
-              setDisplay(String(current));
-              if (progress < 1) requestAnimationFrame(tick);
-            };
-            requestAnimationFrame(tick);
-            io.unobserve(entry.target);
+      ([entry]) => {
+        const inView =
+          entry.isIntersecting && entry.intersectionRatio >= THRESHOLD;
+
+        if (!inView) {
+          if (!armed) {
+            armed = true;
+            setDisplay(0);
           }
-        });
+          return;
+        }
+
+        io.disconnect();
+        // Already on screen when the page loaded: keep the final value instead of jumping to 0.
+        if (!armed) return;
+
+        const start = performance.now();
+        const tick = (now: number) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          setDisplay(Math.round(value * eased));
+          if (progress < 1) frame = requestAnimationFrame(tick);
+        };
+        frame = requestAnimationFrame(tick);
       },
-      { threshold: 0.4 }
+      { threshold: THRESHOLD }
     );
 
     io.observe(node);
-    return () => io.disconnect();
+    return () => {
+      io.disconnect();
+      cancelAnimationFrame(frame);
+    };
   }, [value, duration]);
 
   return (

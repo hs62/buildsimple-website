@@ -7,9 +7,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BuildSimple – Stop chasing subs. Start winning more bids.",
+  title: "BuildSimple – Built for contractors. Bidding made simple.",
   description:
-    "Automated bid management for general contractors. Let AI track quotes and follow up automatically so that you close bids faster.",
+    "AI bid management for general contractors. BuildSimple finds your subs, follows up, compares quotes and builds your estimate, so your team can bid up to 33% more projects.",
 };
 
 export default function RootLayout({
@@ -19,6 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} antialiased`}>
+      <head>
+        {/* Scroll-reveal content starts hidden and is shown by JS; without JS it would never appear. */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html:
+              "<style>.reveal,.reveal-left,.reveal-right,.reveal-scale{opacity:1!important;transform:none!important}</style>",
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col bg-white">{children}</body>
     </html>
   );
