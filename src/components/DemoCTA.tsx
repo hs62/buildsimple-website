@@ -30,7 +30,7 @@ export default function DemoCTA() {
         <ScrollReveal variant="up" delay={1}>
           <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight text-balance">
             Be the first to{" "}
-            <span className="text-accent">do more with your team.</span>
+            <span className="text-accent">get access.</span>
           </h2>
         </ScrollReveal>
         <ScrollReveal variant="up" delay={2}>

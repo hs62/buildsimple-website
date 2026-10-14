@@ -17,8 +17,8 @@ export default function Metrics() {
           </ScrollReveal>
           <ScrollReveal variant="up" delay={1}>
             <h2 className="text-3xl sm:text-4xl font-bold text-primary leading-tight text-balance">
-              Same team.{" "}
-              <span className="text-accent">More bids.</span>
+              Bid more.{" "}
+              <span className="text-accent">Build more.</span>
             </h2>
           </ScrollReveal>
         </div>
