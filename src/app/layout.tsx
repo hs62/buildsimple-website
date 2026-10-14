@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BuildSimple – Do more with your current team",
+  title: "BuildSimple – Built for builders. Bidding made simple.",
   description:
     "AI bid management for general contractors. BuildSimple finds your subs, follows up, compares quotes and builds your estimate, so your team can bid up to 33% more projects.",
 };
