@@ -3,9 +3,9 @@ import ScrollReveal from "./ScrollReveal";
 export default function Features() {
   const features = [
     {
-      title: "Follow Up with Ease",
+      title: "Find the right subs",
       description:
-        "Following up with sub contractors shouldn't require your extra time.",
+        "AI reads your bid documents and identifies the trades and subs each project needs.",
       icon: (
         <svg
           className="w-10 h-10"
@@ -17,15 +17,15 @@ export default function Features() {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
           />
         </svg>
       ),
     },
     {
-      title: "Track Quotes",
+      title: "Follow-ups, handled",
       description:
-        "Track quotes and status of bids in one consolidated dashboard.",
+        "Invites go out automatically, and AI calling agents follow up and log every reply.",
       icon: (
         <svg
           className="w-10 h-10"
@@ -37,15 +37,15 @@ export default function Features() {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+            d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
           />
         </svg>
       ),
     },
     {
-      title: "Get Full Coverage Visibility",
+      title: "Compare quotes instantly",
       description:
-        "One visibility on which trades to which sub - ensuring full coverage.",
+        "Quotes land side by side, so your team compares and decides in minutes.",
       icon: (
         <svg
           className="w-10 h-10"
@@ -57,7 +57,27 @@ export default function Features() {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+            d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Your estimate, built",
+      description:
+        "Your estimate comes together as quotes arrive, ready to review and send.",
+      icon: (
+        <svg
+          className="w-10 h-10"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"
           />
         </svg>
       ),
@@ -83,7 +103,7 @@ export default function Features() {
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <ScrollReveal variant="up">
             <span className="inline-block px-4 py-1.5 rounded-full bg-accent/15 text-accent text-xs font-semibold tracking-wide uppercase border border-accent/30 mb-5">
@@ -91,26 +111,26 @@ export default function Features() {
             </span>
           </ScrollReveal>
           <ScrollReveal variant="up" delay={1}>
-            <h2 className="text-3xl sm:text-5xl font-bold leading-tight">
+            <h2 className="text-3xl sm:text-5xl font-bold leading-tight text-balance">
               One dashboard.{" "}
-              <span className="text-accent">All your bids.</span>
+              <span className="text-accent">Every bid, handled.</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal variant="up" delay={2}>
             <p className="mt-5 text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              BuildSimple tracks every sub invitation, automates follow-ups,
-              and centralizes communication. Bid coordination that doesn&apos;t
-              require you to chase people.
+              From the first invite to the final estimate, BuildSimple&apos;s
+              AI handles the coordination so your team can focus on the work
+              that wins.
             </p>
           </ScrollReveal>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, i) => (
             <ScrollReveal
               key={feature.title}
               variant="up"
-              delay={(i + 1) as 1 | 2 | 3}
+              delay={(i + 1) as 1 | 2 | 3 | 4}
               className="group"
             >
               <div className="text-center px-6 py-8 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-sm hover:bg-white/[0.06] hover:border-accent/30 hover:-translate-y-1 transition-all duration-500 h-full">

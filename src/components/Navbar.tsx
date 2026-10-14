@@ -57,7 +57,7 @@ export default function Navbar() {
             href="#waitlist"
             className="bg-accent text-white px-5 py-2.5 rounded-lg hover:bg-accent-dark transition-colors font-semibold text-sm shadow-md shadow-accent/20"
           >
-            Join Waitlist
+            Join the waitlist
           </a>
         </div>
       </nav>

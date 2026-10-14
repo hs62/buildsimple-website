@@ -10,22 +10,23 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center w-full">
         <ScrollReveal variant="up">
-          <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold tracking-tight text-primary leading-[1.1]">
-            Stop chasing quotes.{" "}
-            <span className="text-accent">Start closing bids.</span>
+          <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold tracking-tight text-primary leading-[1.1] text-balance">
+            Do more with{" "}
+            <span className="text-accent">your current team.</span>
           </h1>
         </ScrollReveal>
 
         <ScrollReveal variant="up" delay={2}>
           <p className="mt-6 text-base sm:text-lg text-primary/60 max-w-2xl mx-auto leading-relaxed">
-            Automated bid management for general contractors. Let AI track
-            quotes and follow up automatically so that you close bids faster.
+            BuildSimple.ai takes the repetitive bid work off your team&apos;s
+            plate, so they can bid up to 33% more projects.
           </p>
         </ScrollReveal>
 
         <ScrollReveal variant="scale" delay={3}>
           <div className="mt-10 max-w-3xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden bg-primary shadow-2xl border-2 border-primary-light">
+              {/* TODO: replace with v2 video when published */}
               <iframe
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/WNI6JoDZ8KA?si=QDWVRXVvW9pcRYBH"
@@ -42,7 +43,7 @@ export default function Hero() {
               href="#waitlist"
               className="inline-block bg-accent text-white px-8 py-3.5 rounded-lg hover:bg-accent-dark transition-colors font-semibold text-base shadow-lg shadow-accent/30"
             >
-              Join Waitlist
+              Join the waitlist
             </a>
           </div>
         </ScrollReveal>

@@ -37,8 +37,8 @@ export default function ScrollReveal({
     if (!node) return;
 
     if (typeof IntersectionObserver === "undefined") {
-      setVisible(true);
-      return;
+      const frame = requestAnimationFrame(() => setVisible(true));
+      return () => cancelAnimationFrame(frame);
     }
 
     const io = new IntersectionObserver(
