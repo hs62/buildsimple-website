@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-3xl mx-auto text-center w-full">
         <ScrollReveal variant="up">
           <h1 className="text-[2rem] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight text-primary leading-[1.1] text-balance">
-            Built for contractors.{" "}
+            AI for Construction.{" "}
             <span className="block text-accent">Bidding made simple.</span>
           </h1>
         </ScrollReveal>
