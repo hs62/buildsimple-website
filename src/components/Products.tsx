@@ -63,8 +63,8 @@ export default function Products() {
           </ScrollReveal>
           <ScrollReveal variant="up" delay={1}>
             <h2 className="text-3xl sm:text-5xl font-bold text-primary leading-tight text-balance">
-              AI for the{" "}
-              <span className="text-accent">construction industry.</span>
+              AI that{" "}
+              <span className="text-accent">just works.</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal variant="up" delay={2}>
