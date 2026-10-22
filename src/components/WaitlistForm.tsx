@@ -25,6 +25,9 @@ export default function WaitlistForm() {
       });
 
       if (res.ok) {
+        // No personal details here: Google Analytics doesn't allow emails or names in events.
+        const w = window as Window & { dataLayer?: object[] };
+        (w.dataLayer ||= []).push({ event: "waitlist_signup" });
         setStatus("success");
         setMessage("We'll be in touch when BuildSimple is ready.");
         setEmail("");
