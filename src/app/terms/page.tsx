@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 const LAST_UPDATED = "July 18, 2026";
+const PRIVACY_LAST_UPDATED = "October 21, 2026";
 const CONTACT_EMAIL = "harv@cerebrumsystems.ca";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -295,7 +296,7 @@ export default function TermsPage() {
               Privacy Policy
             </h1>
             <p className="mt-3 text-sm text-primary/50 font-medium">
-              Last updated: {LAST_UPDATED}
+              Last updated: {PRIVACY_LAST_UPDATED}
             </p>
 
             <div className="mt-8">
@@ -322,8 +323,12 @@ export default function TermsPage() {
                 </strong>{" "}
                 Standard technical and usage data such as IP address, browser
                 type, device information, pages visited, and actions taken
-                within the Products. The embedded YouTube player on the Site
-                may set cookies under Google&rsquo;s privacy policy.
+                within the Products. We use Google Analytics, loaded through
+                Google Tag Manager, to understand how visitors use the Site,
+                including whether they join the waitlist; it sets cookies and
+                processes this data under Google&rsquo;s privacy policy. The
+                embedded YouTube player on the Site may also set cookies under
+                Google&rsquo;s privacy policy.
               </P>
               <P>
                 We do not collect government identifiers or sensitive personal
